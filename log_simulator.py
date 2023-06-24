@@ -8,6 +8,10 @@ Simulate environment log files for testing
 Example usage, from the terminal, assuming logs are in the same directory as script:
 
 ./log_simulator.py a_20221108T171619.log b_20221220T192552 c_20221108T171500.txt d_20221108T171500.txt e_2022_12_20_T01_52_ace.log
+
+NOTE: This code may not function exactly as expected since it was
+anonymized code to protect client identity. Mostly file names/paths
+were modified and can be updated to preserve functionality.
 """
 
 import os
@@ -30,11 +34,11 @@ class logsimulator:
 
         """
         Types of logs:
-        - e : e_2022_12_20_T01_52_ace.log
-        - b : b_20221220T192552
-        - d : d_20221108T171500.txt
-        - c : c_20221108T171500.txt
         - a : a_20221108T171619.log
+        - b : b_20221220T192552
+        - c : c_20221108T171500.txt
+        - d : d_20221108T171500.txt
+        - e : e_2022_12_20_T01_52_ace.log
         """
 
         now = datetime.now()
